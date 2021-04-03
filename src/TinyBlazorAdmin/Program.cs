@@ -28,7 +28,7 @@ namespace TinyBlazorAdmin
                 options.ProviderOptions
                 .DefaultAccessTokenScopes.Add("user.read");
                 options.ProviderOptions
-                .AdditionalScopesToConsent.Add($"{functionEndpoint(builder)}user_impersonation");
+                .AdditionalScopesToConsent.Add($"{functionEndpoint(builder)}/user_impersonation");
                 builder.Configuration.Bind("AzureAd", options.ProviderOptions.Authentication);
             });
 
