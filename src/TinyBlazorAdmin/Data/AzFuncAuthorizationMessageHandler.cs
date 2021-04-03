@@ -27,7 +27,7 @@ namespace TinyBlazorAdmin.Data
             Endpoint = section.GetValue<string>(nameof(Endpoint));
             ConfigureHandler(
                 new[] { Endpoint },
-                new[] { string.Concat(Endpoint, "/user_impersonation") }
+                new[] { string.Concat(Endpoint, "user_impersonation") }
             );
         }
     }
